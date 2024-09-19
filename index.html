@@ -26,7 +26,7 @@
             text-align: center;
         }
     .title {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
     opacity: 0;
     animation: slideBottom 2s ease forwards;
@@ -85,7 +85,8 @@
     z-index: 1;
     animation: shift 1s ease-in-out infinite alternate;
     display: inline-block;
-    margin: 0 auto; /* Ensures the element is centered */
+    margin: 0 auto; 
+        
 }
 
 .glitch:before,
@@ -181,7 +182,7 @@
             const url = document.getElementById('urlInput').value;
             const resultContainer = document.getElementById('result');
             
-            // Clear any previous result (video or image)
+            
             resultContainer.innerHTML = '';
 
             if (!url) {
@@ -189,35 +190,34 @@
                 return;
             }
 
-            // Show glitch loading animation
+
             const loadingText = document.createElement('div');
             loadingText.className = 'glitch';
             loadingText.setAttribute('data-glitch', 'Fetching...');
             loadingText.textContent = 'Fetching...';
             resultContainer.appendChild(loadingText);
 
-            // API URL with the provided Instagram URL
             const apiUrl = `https://insta-dl.hazex.workers.dev/?url=${encodeURIComponent(url)}`;
 
-            // Fetch the data from the API
+            
             fetch(apiUrl)
                 .then(response => response.json())
                 .then(data => {
-                    // Remove the glitch loading text
+                    
                     resultContainer.innerHTML = '';
 
                     if (!data.error) {
                         const mediaUrl = data.result.url;
                         const extension = data.result.extension;
 
-                        // If the media is a video, show the video player
+                        
                         if (extension === 'mp4') {
                             const videoElement = document.createElement('video');
                             videoElement.src = mediaUrl;
                             videoElement.controls = true;
                             resultContainer.appendChild(videoElement);
                         } else {
-                            // Otherwise, assume it's an image and display it
+                            
                             const imgElement = document.createElement('img');
                             imgElement.src = mediaUrl;
                             resultContainer.appendChild(imgElement);
@@ -230,7 +230,7 @@
                     console.error("Error fetching the Instagram reel:", error);
                     alert("There was an error fetching the reel.");
 
-                    // Remove glitch loading text in case of an error
+                    
                     resultContainer.innerHTML = '';
                 });
         }
