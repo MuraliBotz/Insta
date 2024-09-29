@@ -1,7 +1,11 @@
-# INSTAGRAM VIDEO DOWNLOAER
+# ✨ **INSTAGRAM VIDEO DOWNLOADER** ✨
 
-Download Any Instagram Video Or Post From Here 
+**Download any Instagram Video or Post easily!**
 
-Visit Once Here 
+✨ **Click below to visit our website:**  
+🔗 [**Open Website**](https://Muralibotz.github.io/Insta)
 
-[Open Website](https://Muralibotz.github.io/Insta)
+---
+
+👑 _Credit:_  
+**@MuraliBotz** & **Team Hazex** ✨
