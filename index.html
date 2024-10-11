@@ -3,169 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instagram Downloader</title>
+    <title>Instagram Reels Downloader</title>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <style>
-        body {
-            font-family: serif;
-            margin: 0;
-            padding: 0;
-            background-color: #233142;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-        }
-        .container {
-            width: 100%;
-            max-width: 800px;
-            background: transparent;
-            margin-top: 18px;
-            text-align: center;
-        }
-    .title {
-    font-size: 25px;
-    font-weight: 700;
-    opacity: 0;
-    animation: slideBottom 2s ease forwards;
-    text-align: center;
-    color: cyan;
-}
-
-.title span {
-    color: cyan;
-}
-    @keyframes slideBottom {
-    0% {
-        transform: translateY(-100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
-        input[type="text"] {
-            width: 80%;
-            padding: 10px;
-            font-size: 16px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background: white;
-            margin-top: 30px;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            color: white;
-            background-color: transparent;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: cyan;
-            color: black;
-            box-shadow: 0px 0px 100px cyan;
-        }
-        .result {
-            margin-top: 20px;
-            padding: 10px;
-        }
-        .glitch {
-    position: relative;
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 1.2;
-    color: #fff;
-    letter-spacing: 5px;
-    z-index: 1;
-    animation: shift 1s ease-in-out infinite alternate;
-    display: inline-block;
-    margin: 0 auto; 
-        
-}
-
-.glitch:before,
-.glitch:after {
-    display: block;
-    content: attr(data-glitch);
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.8;
-}
-
-.glitch:before {
-    animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
-    color: #8b00ff;
-    z-index: -1;
-}
-
-.glitch:after {
-    animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
-    color: #00e571;
-    z-index: -2;
-}
-
-@keyframes glitch {
-    0% {
-        transform: translate(0);
-    }
-    20% {
-        transform: translate(-3px, 3px);
-    }
-    40% {
-        transform: translate(-3px, -3px);
-    }
-    60% {
-        transform: translate(3px, 3px);
-    }
-    80% {
-        transform: translate(3px, -3px);
-    }
-    to {
-        transform: translate(0);
-    }
-}
-
-@keyframes shift {
-    0%, 40%, 44%, 58%, 61%, 65%, 69%, 73%, 100% {
-        transform: skewX(0deg);
-    }
-    41% {
-        transform: skewX(10deg);
-    }
-    42% {
-        transform: skewX(-10deg);
-    }
-    59% {
-        transform: skewX(40deg) skewY(10deg);
-    }
-    60% {
-        transform: skewX(-40deg) skewY(-10deg);
-    }
-    63% {
-        transform: skewX(10deg) skewY(-5deg);
-    }
-    70% {
-        transform: skewX(-50deg) skewY(-20deg);
-    }
-    71% {
-        transform: skewX(10deg) skewY(-10deg);
-    }
-}
-
-        video, img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            margin-top: 10px;
-        }
-    </style>
+     <link href="main/CssHero.css" rel="stylesheet">
 </head>
 <body>
 
@@ -176,72 +18,220 @@
 
         <div class="result" id="result"></div>
     </div>
+    
+<main class="scene left">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</main>
 
-    <script>
-        function fetchInstagramReel() {
-            const url = document.getElementById('urlInput').value;
-            const resultContainer = document.getElementById('result');
-            
-            
-            resultContainer.innerHTML = '';
-
-            if (!url) {
-                alert("Please enter a valid URL");
-                return;
-            }
-
-
-            const loadingText = document.createElement('div');
-            loadingText.className = 'glitch';
-            loadingText.setAttribute('data-glitch', 'Fetching...');
-            loadingText.textContent = 'Fetching...';
-            resultContainer.appendChild(loadingText);
-
-            const apiUrl = `https://insta-dl.hazex.workers.dev/?url=${encodeURIComponent(url)}`;
-
-            
-            fetch(apiUrl)
-                .then(response => response.json())
-                .then(data => {
-                    
-                    resultContainer.innerHTML = '';
-
-                    if (!data.error) {
-                        const mediaUrl = data.result.url;
-                        const extension = data.result.extension;
-
-                        
-                        if (extension === 'mp4') {
-                            const videoElement = document.createElement('video');
-                            videoElement.src = mediaUrl;
-                            videoElement.controls = true;
-                            resultContainer.appendChild(videoElement);
-                        } else {
-                            
-                            const imgElement = document.createElement('img');
-                            imgElement.src = mediaUrl;
-                            resultContainer.appendChild(imgElement);
-                        }
-                    } else {
-                        alert("Error: " + data.error);
-                    }
-                })
-                .catch(error => {
-                    console.error("Error fetching the Instagram reel:", error);
-                    alert("There was an error fetching the reel.");
-
-                    
-                    resultContainer.innerHTML = '';
-                });
-        }
-    var typed = new Typed('#elementTwo', {
-    strings: ['Instagram Downloader', 'Made By @ItzNotCoder'],
-    typeSpeed: 100,
-    backSpeed: 100,
-    backDelay: 1000,
-    loop: true
-});
-    </script>
-
+    
+ <script src="main/main.js"></script>
 </body>
 </html>
+
